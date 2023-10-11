@@ -1,57 +1,131 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0; 
-    padding: 0; 
-    background-color: #f0f0f0;
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Apply styles to the body element */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #444; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header */
 header {
-    background-color: #0066cc;
+    background: linear-gradient(to right, #FFA07A, #FF6347); /* Gradient from Light Salmon to Tomato */
     color: #fff;
     text-align: center;
     padding: 20px;
+    border-bottom: 2px solid #FF6347; /* Tomato */
 }
 
-
-h1 {
-    font-size: 2em; 
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
+nav ul li a {
+    text-decoration: none;
+    color: #FFA07A; /* Light Salmon */
+    transition: color 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #FF4500; /* Orange Red on hover */
+}
+
+/* Apply styles to sections */
 section {
+    background: linear-gradient(to right, #ADFF2F, #32CD32); /* Gradient from Green Yellow to Lime Green */
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #32CD32; /* Lime Green */
     border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-table a {
+/* Apply styles to headings */
+h2 {
+    color: #FFA07A; /* Light Salmon */
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Style the image */
+img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the email link */
+a[href^="mailto:"] {
     text-decoration: none;
-    color: #0066cc;
-}
-
-th {
-    background-color: #0066cc;
-    color: #fff;
-}
-
-tr:hover {
-    background-color: #f2f2f2;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-p strong {
+    color: #FFA07A; /* Light Salmon */
     font-weight: bold;
 }
 
-audio, video {
-    margin-top: 10px;
+/* Apply styles to the footer */
+footer {
+    background: linear-gradient(to right, #FFA07A, #FF6347); /* Gradient from Light Salmon to Tomato */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
-          
+/* Apply styles to the address element */
+address {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Apply styles to the ul element in the "Skills" section */
+section#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#skills li {
+    margin-bottom: 5px;
+}
+
+/* Apply styles to the audio and video elements */
+section#intro_audio audio,
+section#intro_video video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 1px solid #32CD32; /* Lime Green */
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply styles to the "Hobbies" section */
+section#hobbies ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section#hobbies li {
+    margin-bottom: 5px;
+    color: #444; /* Dark gray text */
+    font-weight: bold;
+}
+
+/* Pseudo-class hover effect for links */
+a:hover {
+    color: #FF4500; /* Orange Red on hover */
+}
