@@ -21,6 +21,18 @@ header {
     text-align: center;
     padding: 20px;
     border-bottom: 2px solid #FF6347; /* Tomato */
+    position: relative; /* Add relative positioning to the header */
+}
+
+/* Pseudo-element for header */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #FF6347; /* Tomato */
 }
 
 /* Style the navigation menu */
